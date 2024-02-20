@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back01"
+    tools:context=".AdminUpdateAppointmentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarFrame"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/toolbarRl"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_toolbar02">
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/titleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Dashboard User"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleDashboardUser"
+                android:layout_centerHorizontal="true"
+                android:text="abc@example.com"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Patient name"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/requestTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Request Time:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/appointmentTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/requestTimeTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Appointment Time:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appointmentTimeTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Description:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/approveTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Approved By:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/commentEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:layout_below="@id/approveTv"
+                android:background="@drawable/rounded_field"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter comment..."
+                android:textSize="18sp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/selectTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentEt"
+                android:text="Select a doctor (if appointment is completed): "
+                android:layout_marginLeft="24dp"
+                android:textSize="18dp"
+                android:layout_marginTop="40dp"/>
+
+                <Spinner
+                    android:id="@+id/doctorDd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:spinnerMode="dropdown"
+                    android:hint="Select doctor"
+                    android:textSize="18sp"
+                    android:layout_below="@id/selectTv" />
+
+            <TextView
+                android:id="@+id/prescriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctorDd"
+                android:text="Select all medicine(s) issued (if relevant): "
+                android:layout_marginLeft="24dp"
+                android:textSize="18dp"
+                android:layout_marginTop="40dp"/>
+
+            <com.anurag.multiselectionspinner.MultiSpinner
+                android:id="@+id/prescriptionDd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@id/prescriptionTv" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+            <Button
+                android:id="@+id/completeBtn"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/rounded_field"
+                android:backgroundTint="#00ffff"
+                android:padding="12dp"
+                android:text="Complete Appointment"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toEndOf="@id/completeBtn"
+                android:background="@drawable/rounded_field_button"
+                android:backgroundTint="#ff7f7f"
+                android:padding="12dp"
+                android:text="Cancel Appointment"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/admin_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

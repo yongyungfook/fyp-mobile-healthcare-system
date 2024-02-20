@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Time"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_message"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#008000"
+        android:layout_below="@id/timeTv">
+
+        <TextView
+            android:id="@+id/messageSentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a message"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

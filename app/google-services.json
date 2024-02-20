@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "60123475071",
+    "firebase_url": "https://icare-e244a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "icare-e244a",
+    "storage_bucket": "icare-e244a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60123475071:android:16b1c45054a6d434caa34a",
+        "android_client_info": {
+          "package_name": "com.example.icare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU71BPkV83Zvx2El0QKzIO_pQtCglgyOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

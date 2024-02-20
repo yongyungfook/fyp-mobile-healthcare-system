@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp"
+    android:background="@drawable/rounded_field">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_field">
+
+        <TextView
+            android:id="@+id/uidTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="UID: " />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uidTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Name: " />
+
+        <TextView
+            android:id="@+id/appointmentTimeTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Appointment Time: "
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointmentTimeTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Description: "
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/doctorTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Doctor: " />
+
+        <TextView
+            android:id="@+id/commentTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctorTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Comment: " />
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commentTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Status: "
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/prescriptionTv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Prescription issued: "
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

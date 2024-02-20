@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/registerIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/register" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/rounded_field"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:hint="Enter your full name"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/rounded_field"
+        android:inputType="textEmailAddress"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:hint="Enter your email"/>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/rounded_field"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:hint="Enter your password"/>
+
+    <TextView
+        android:id="@+id/passwordTv"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="*At least 8 characters, with at least 1 number, 1 uppercase and 1 lowercase letter"
+        />
+
+    <EditText
+        android:id="@+id/reenterPasswordEt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/rounded_field"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:hint="Re-enter your password"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/rounded_field"
+        android:inputType="phone"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:hint="Enter your phone number"/>
+
+
+    <RadioGroup
+        android:id="@+id/genderRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/maleBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/femaleBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/agreeCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You agree to iCare's terms and conditions." />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-40dp"
+        android:minWidth="100dp"
+        android:background="#8AFF8A"
+        android:textColor="@color/black"
+        android:text="Register"
+        app:backgroundTint="@null"
+        android:textAllCaps="false"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

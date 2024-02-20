@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back01"
+    tools:context=".AdminEditInventoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarFrame"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/toolbarRl"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_toolbar02">
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/titleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Dashboard User"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleDashboardUser"
+                android:layout_centerHorizontal="true"
+                android:text="abc@example.com"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/addLl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_image"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select image" />
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:background="@drawable/rounded_field"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:hint="  Enter the name of the item"/>
+
+        <EditText
+            android:id="@+id/descriptionEt"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:background="@drawable/rounded_field"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:hint="  Enter the description of the item"/>
+
+        <EditText
+            android:id="@+id/stockEt"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:background="@drawable/rounded_field"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:hint="  Enter the number of stock available"/>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="-40dp"
+            android:minWidth="100dp"
+            android:background="#8AFF8A"
+            android:textColor="@color/black"
+            android:text="Confirm"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/admin_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back01"
+    tools:context=".AdminHomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarFrame"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/toolbarRl"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_toolbar02">
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/titleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Dashboard User"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitleDashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleDashboardUser"
+                android:layout_centerHorizontal="true"
+                android:text="abc@example.com"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/liveTv"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/image2Iv"
+            android:text="Live Monitoring"
+            android:maxLines="1"/>
+
+        <RelativeLayout
+            android:id="@+id/lobbyRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/liveTv"
+            android:background="@drawable/rounded_field"
+            android:backgroundTint="#a6f1a6"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageIv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/img_clinic1"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"  />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageIv"
+                android:text="Main Lobby"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/tempTv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageIv"
+                android:text="Temperature: "
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/humidityTv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempTv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageIv"
+                android:text="Humidity: " />
+
+            <TextView
+                android:id="@+id/lightTv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humidityTv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Light: "
+                android:layout_toRightOf="@id/imageIv"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/consultationRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/toolbarRl"
+            android:background="@drawable/rounded_field"
+            android:backgroundTint="#a6f1a6"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image2Iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/img_clinic2"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"  />
+
+            <TextView
+                android:id="@+id/name2Tv"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image2Iv"
+                android:text="Consultation Room"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/temp2Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name2Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image2Iv"
+                android:text="Temperature: 23 °C"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/humidity2Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp2Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image2Iv"
+                android:text="Humidity: 50" />
+
+            <TextView
+                android:id="@+id/light2Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humidity2Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Light level: 478"
+                android:layout_toRightOf="@id/image2Iv"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/roomRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/toolbarRl"
+            android:background="@drawable/rounded_field"
+            android:backgroundTint="#a6f1a6"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image3Iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/img_clinic3"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"  />
+
+            <TextView
+                android:id="@+id/name3Tv"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image3Iv"
+                android:text="Patient Room 1"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/temp3Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name3Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image3Iv"
+                android:text="Temperature: 24 °C"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/humidity3Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp3Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image3Iv"
+                android:text="Humidity: 50" />
+
+            <TextView
+                android:id="@+id/light3Tv"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humidity3Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Light level: 465"
+                android:layout_toRightOf="@id/image3Iv"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/room2Rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarRl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_field"
+            android:backgroundTint="#a6f1a6"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image4Iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_clinic4" />
+
+            <TextView
+                android:id="@+id/name4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image4Iv"
+                android:maxLines="1"
+                android:text="Patient Room 2"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/temp4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name4Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image4Iv"
+                android:maxLines="1"
+                android:text="Temperature: 23 °C"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/humidity4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp4Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image4Iv"
+                android:text="Humidity: 50"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/light4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humidity4Tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/image4Iv"
+                android:maxLines="1"
+                android:text="Light level: 479"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/admin_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

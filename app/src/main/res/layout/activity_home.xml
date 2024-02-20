@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/homeIv"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="380dp"
+        app:srcCompat="@drawable/hom" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Health, Our Priority"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to iCare"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:background="#8AFF8A"
+        android:textColor="@color/black"
+        android:text="Sign In"
+        app:backgroundTint="@null"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-50dp"
+        android:minWidth="100dp"
+        android:background="#8AFF8A"
+        android:textColor="@color/black"
+        android:text="Register"
+        app:backgroundTint="@null"
+        android:textAllCaps="false"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
